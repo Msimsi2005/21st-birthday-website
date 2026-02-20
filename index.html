@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happiest 21st Birthday, My Love! 🎂</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:ital,wght@0,400;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- ========== BALLOONS ========== -->
+  <div id="balloons-container"></div>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-sub">Today is all about you 💕</p>
+      <h1 class="hero-title">Happy 21st<br/>Birthday!</h1>
+      <p class="hero-name" id="girlfriend-name">My Dearest Love</p>
+      <!-- ✏️ EDIT: Change "My Dearest Love" above to her name -->
+      <a href="#candles" class="scroll-btn">Blow Your Candles Sthandwa Saami</a>
+    </div>
+    <div class="hearts-bg"></div>
+  </section>
+
+  <!-- ========== CANDLE SECTION ========== -->
+  <section class="candles-section" id="candles">
+    <h2>close your eyes and make a wish!🕯️</h2>
+    <p class="section-sub">Click each candle to blow it out... all 21!</p>
+    <div id="candle-grid"></div>
+    <div id="wish-message" class="hidden">
+      <span>✨ Your wish has been sent to the universe,! ✨</span>
+    </div>
+    <p class="candle-count">Candles out: <span id="count">0</span> / 21</p>
+  </section>
+
+  <!-- ========== LOVE MESSAGE SECTION ========== -->
+  <section class="message-section" id="message">
+    <div class="message-card">
+      <div class="message-icon">💌</div>
+      <h2>A Message From My Heart</h2>
+      <div class="message-text">
+        <!-- ✏️ EDIT: Write your personal message to her below -->
+        <p>
+          Sthandwa Sam, Happiest 21st birthday to you
+Today is a big day to celebrate the day a love of my life was born, and I’ll keep it simple: I am so proud of the woman you’ve become and are becoming. 
+        </p>
+        <p>
+          You are incredibly strong, and Ik that whatever dreams you're chasing, you absolutely got this. Having you in my life has changed everything for the better, and you’ve made my world so much brighter, nicer, and funnier just by being in it.
+        </p>
+        <p>
+          I look back at all our memories, and I’m just grateful of ol the memories I share w you, even thou we have more memories loading, like having sex in the elevator as your wish, my lady. My biggest wish for us is that we never become strangers again but continue growing together.
+        </p>
+        <p>
+         So, enjoy your day like the 'big girl' you are! I wish you many more years of growth, success, and obviously... plenty of our favorite 'quality time' together, which again, you say, is 'seggs.' HAAAAAAAH wena yaythanda iseggs shemm and sometimes i feel like ts the only reason you want me for cs you just want to use me and it's not nice and i am being frl shuwa
+        </p>
+        <p>
+          Lastly, "I love you", and I’m right behind you through it ol. "Remember that you are more than ready for everything the world has to offer. I am so so so proud of you.
+        </p>
+        <p class="message-signature">Forever Yours, <em>Misty</em></p>
+        <!-- ✏️ EDIT: Replace [Your Name] with your actual name -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PHOTO GALLERY ========== -->
+  <section class="gallery-section" id="gallery">
+    <h2>Our Beautiful Memories 📸</h2>
+    <p class="section-sub">Every picture tells our story</p>
+    <div class="gallery-grid" id="gallery-grid"></div>
+  </section>
+
+  <!-- ========== REASONS I LOVE YOU ========== -->
+  <section class="reasons-section" id="reasons">
+    <h2>21 Reasons why I Love You 💖</h2>
+    <p class="section-sub">Tap each heart to reveal a reason (becareful)</p>
+    <div class="reasons-grid" id="reasons-grid"></div>
+  </section>
+
+  <!-- ========== BIRTHDAY QUIZ ========== -->
+  <section class="quiz-section" id="quiz">
+    <h2>How Well Do You Know Me? 🤔</h2>
+    <p class="section-sub">Let's see how much you really know your boyfriend its our birthday phela😏</p>
+    <div class="quiz-box" id="quiz-box">
+      <div id="quiz-content"></div>
+      <div id="quiz-result" class="hidden"></div>
+    </div>
+  </section>
+
+  <!-- ========== VIRTUAL GIFT BOX ========== -->
+  <section class="gift-section" id="gifts">
+    <h2>Your Surprise Gifts! 🎁</h2>
+    <p class="section-sub">Click each gift to unwrap it!</p>
+    <div class="gifts-grid" id="gifts-grid"></div>
+  </section>
+
+  <!-- ========== BIRTHDAY CAKE BUILDER ========== -->
+  <section class="cake-section" id="cake">
+    <h2>Build Your Dream Cake will get it for you when im back ! 🎂</h2>
+    <p class="section-sub">Customize your perfect birthday cake</p>
+    <div class="cake-builder">
+      <div class="cake-preview" id="cake-preview">
+        <div class="cake-tier tier-top"    id="tier-top"></div>
+        <div class="cake-tier tier-middle" id="tier-mid"></div>
+        <div class="cake-tier tier-bottom" id="tier-bot"></div>
+        <div class="cake-plate"></div>
+      </div>
+      <div class="cake-controls">
+        <div class="cake-option-group">
+          <label>🎨 Frosting Color</label>
+          <div class="color-btns" id="frosting-colors"></div>
+        </div>
+        <div class="cake-option-group">
+          <label>🍓 Toppings</label>
+          <div class="topping-btns" id="topping-btns"></div>
+        </div>
+        <div class="cake-option-group">
+          <label>✨ Decorations</label>
+          <div class="deco-btns" id="deco-btns"></div>
+        </div>
+        <button class="eat-cake-btn" onclick="eatCake()">🍴 Eat Cake!</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== LOVE METER ========== -->
+  <section class="lovemeter-section" id="lovemeter">
+    <h2>Love-O-Meter 💗</h2>
+    <p class="section-sub">Let's measure how much I love you...</p>
+    <div class="meter-container">
+      <div class="meter-machine">
+        <div class="meter-screen">
+          <div class="meter-bar-wrap">
+            <div class="meter-bar" id="meter-bar"></div>
+          </div>
+          <div class="meter-percent" id="meter-percent">0%</div>
+          <div class="meter-label"  id="meter-label">Calculating...</div>
+        </div>
+        <button class="measure-btn" id="measure-btn" onclick="measureLove()">❤️ Measure My Love!</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FUNNY FORTUNE COOKIE ========== -->
+  <section class="fortune-section" id="fortune">
+    <h2>Birthday Fortune Cookie 🥠</h2>
+    <p class="section-sub">Crack it open for your birthday message!</p>
+    <div class="fortune-area">
+      <div class="cookie" id="fortune-cookie" onclick="crackCookie()">
+        <div class="cookie-half left-half">🥠</div>
+      </div>
+      <div class="fortune-paper hidden" id="fortune-paper">
+        <p id="fortune-text"></p>
+      </div>
+      <button class="new-fortune-btn hidden" id="new-fortune-btn" onclick="newFortune()">🥠 Another Cookie!</button>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <p>Made with 💗 just for you • <span id="year"></span></p>
+    <p class="footer-tagline">"You are my today and all of my tomorrows."</p>
+  </footer>
+
+  <!-- ========== BACKGROUND MUSIC ========== -->
+  <div class="music-player" id="music-player">
+    <button id="music-btn" onclick="toggleMusic()">🎵 Play a surprise Song</button>
+    <!-- ✏️ EDIT: Replace "your-song.mp3" in js/config.js with your audio file -->
+    <audio id="bg-music" loop>
+      <source src="Summer Walker - Finally Over It (Official Lyric Video) - Summer Walker.mp3" type="audio/mpeg" id="music-src"/>
+    </audio>
+  </div>
+
+  <!-- ========== CONFETTI CANVAS ========== -->
+  <canvas id="confetti-canvas"></canvas>
+
+  <script src="js/config.js"></script>
+  <script src="js/balloons.js"></script>
+  <script src="js/candles.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/confetti.js"></script>
+  <script src="js/reasons.js"></script>
+  <script src="js/quiz.js"></script>
+  <script src="js/gifts.js"></script>
+  <script src="js/cakebuilder.js"></script>
+  <script src="js/lovemeter.js"></script>
+  <script src="js/fortune.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
